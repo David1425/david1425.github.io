@@ -7,6 +7,7 @@ let app = new PIXI.Application({
 	height: HEIGHT*0.95,
 	antialias: true
 });
+globalThis.__PIXI_APP__ = app;
 document.body.appendChild(app.view);
 
 app.renderer.background.color = 0xEEEEEE;
